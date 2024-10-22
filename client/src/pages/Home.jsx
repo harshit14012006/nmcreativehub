@@ -18,68 +18,53 @@ function Home() {
     <div>
       <div className="bg-[#00032d] text-white min-h-screen flex flex-col items-center">
         {/* Hero Section */}
-       <div className="relative overflow-hidden">
-  {/* Snowflakes effect */}
-  <div className="absolute inset-0 pointer-events-none snowfall">
-    {/* Increased number of snowflakes */}
-    {Array.from({ length: 50 }).map((_, index) => (
-      <div key={index} className={`snowflake snowflake-${index}`} />
-    ))}
-  </div>
+        <div className="relative overflow-hidden">
+          {/* Snowflakes effect */}
+          <div className="absolute inset-0 pointer-events-none snowfall">
+            {/* Increased number of snowflakes */}
+            {Array.from({ length: 50 }).map((_, index) => (
+              <div key={index} className={`snowflake snowflake-${index}`} />
+            ))}
+          </div>
 
-  {/* Content section */}
-  <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-8 md:p-8 relative z-10">
-    {/* Left Section: Text content */}
-    <div className="md:w-1/2 text-center md:text-left">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
-        Boost Your Online Presence
-      </h1>
+          {/* Content section */}
+          <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-8 md:p-8 relative z-10">
+            {/* Left Section: Text content */}
+            <div className="md:w-1/2 text-center md:text-left">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+                Boost Your Online Presence
+              </h1>
 
-      {/* Input Box and Button */}
-      <div className="flex items-center bg-white rounded-full p-2 shadow-lg w-full max-w-lg mx-auto md:mx-0">
-        <input
-          type="text"
-          placeholder="Submit Your Business Name And Get Started"
-          className="flex-1 p-2 outline-none text-gray-700 rounded-l-full"
-        />
-        <button className="bg-red-500 text-white px-4 sm:px-6 py-2 rounded-full font-bold hover:bg-red-600 transition">
-          Start Now
-        </button>
-      </div>
-      <br />
-      <p className="text-base sm:text-lg mb-4 sm:mb-6">
-        Helping Brands Achieve Growth with Innovative Strategies and
-        Targeted Solutions
-      </p>
-    </div>
+              {/* Input Box and Button */}
+              <div className="flex items-center bg-white rounded-full p-2 shadow-lg w-full max-w-lg mx-auto md:mx-0">
+                <input
+                  type="text"
+                  placeholder="Submit Your Business Name And Get Started"
+                  className="flex-1 p-2 outline-none text-gray-700 rounded-l-full"
+                />
+                <button className="bg-red-500 text-white px-4 sm:px-6 py-2 rounded-full font-bold hover:bg-red-600 transition">
+                  Start Now
+                </button>
+              </div>
+              <br />
+              <p className="text-base sm:text-lg mb-4 sm:mb-6">
+                Helping Brands Achieve Growth with Innovative Strategies and
+                Targeted Solutions
+              </p>
+            </div>
 
-    {/* Right Section: Image Placeholder */}
-    <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-      <img
-        src={heroimage}
-        alt="Phone with social media icons"
-        className="w-64 sm:w-80 md:w-96"
-      />
-    </div>
-  </div>
+            {/* Right Section: Image Placeholder */}
+            <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+              <img
+                src={heroimage}
+                alt="Phone with social media icons"
+                className="w-64 sm:w-80 md:w-96"
+              />
+            </div>
+          </div>
 
-  {/* Wavy Effect */}
-  <div className="absolute bottom-0 left-0 w-full h-32 overflow-hidden">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="10 10 1440 300"
-      className="relative -bottom-1"
-    >
-      <path
-        fill="#ff5500"
-        fillOpacity="1"
-        d="M0,160L34.3,154.7C68.6,149,137,139,206,112C274.3,85,343,43,411,26.7C480,11,549,21,617,42.7C685.7,64,754,96,823,112C891.4,128,960,128,1029,122.7C1097.1,117,1166,107,1234,96C1302.9,85,1371,75,1406,69.3L1440,64L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
-      />
-    </svg>
-  </div>
-
-  {/* Inline CSS for snowfall effect */}
-  <style>{`
+          {/* Inline CSS for snowfall effect */}
+          <style>{`
     .snowfall {
       position: absolute;
       width: 100%;
@@ -125,9 +110,7 @@ function Home() {
       }
     }
   `}</style>
-</div>
-
-
+        </div>
 
         {/* Services Section */}
         <div className="bg-white text-gray-900 w-full py-16">
